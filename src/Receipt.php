@@ -1,29 +1,29 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu;
+namespace redmenta\SzamlazzHu;
 
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
-use zoparga\SzamlazzHu\Client\Errors\CancellationReceiptObtainException;
-use zoparga\SzamlazzHu\Client\Errors\ModelValidationException;
-use zoparga\SzamlazzHu\Client\Errors\ReceiptAlreadyCancelledException;
-use zoparga\SzamlazzHu\Client\Errors\ReceiptValidationException;
-use zoparga\SzamlazzHu\Client\Models\ReceiptCancellationResponse;
-use zoparga\SzamlazzHu\Client\Models\ReceiptCreationResponse;
-use zoparga\SzamlazzHu\Contracts\ArrayableItem;
-use zoparga\SzamlazzHu\Contracts\ArrayableItemCollection;
-use zoparga\SzamlazzHu\Contracts\ArrayablePayment;
-use zoparga\SzamlazzHu\Contracts\ArrayablePaymentCollection;
-use zoparga\SzamlazzHu\Internal\AbstractModel;
-use zoparga\SzamlazzHu\Internal\Support\ClientAccessor;
-use zoparga\SzamlazzHu\Internal\Support\ItemHolder;
-use zoparga\SzamlazzHu\Internal\Support\PaymentHolder;
+use redmenta\SzamlazzHu\Client\Errors\CancellationReceiptObtainException;
+use redmenta\SzamlazzHu\Client\Errors\ModelValidationException;
+use redmenta\SzamlazzHu\Client\Errors\ReceiptAlreadyCancelledException;
+use redmenta\SzamlazzHu\Client\Errors\ReceiptValidationException;
+use redmenta\SzamlazzHu\Client\Models\ReceiptCancellationResponse;
+use redmenta\SzamlazzHu\Client\Models\ReceiptCreationResponse;
+use redmenta\SzamlazzHu\Contracts\ArrayableItem;
+use redmenta\SzamlazzHu\Contracts\ArrayableItemCollection;
+use redmenta\SzamlazzHu\Contracts\ArrayablePayment;
+use redmenta\SzamlazzHu\Contracts\ArrayablePaymentCollection;
+use redmenta\SzamlazzHu\Internal\AbstractModel;
+use redmenta\SzamlazzHu\Internal\Support\ClientAccessor;
+use redmenta\SzamlazzHu\Internal\Support\ItemHolder;
+use redmenta\SzamlazzHu\Internal\Support\PaymentHolder;
 
 /**
  * Class Receipt
- * @package zoparga\SzamlazzHu
+ * @package redmenta\SzamlazzHu
  *
  * [Attributes]
  * @property string $prefix

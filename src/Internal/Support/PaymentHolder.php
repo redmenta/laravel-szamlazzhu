@@ -1,13 +1,13 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Internal\Support;
+namespace redmenta\SzamlazzHu\Internal\Support;
 
 
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
-use zoparga\SzamlazzHu\Contracts\ArrayablePayment;
-use zoparga\SzamlazzHu\Contracts\ArrayablePaymentCollection;
+use redmenta\SzamlazzHu\Contracts\ArrayablePayment;
+use redmenta\SzamlazzHu\Contracts\ArrayablePaymentCollection;
 
 trait PaymentHolder {
 

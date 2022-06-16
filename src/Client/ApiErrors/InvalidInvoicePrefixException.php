@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\ApiErrors;
+namespace redmenta\SzamlazzHu\Client\ApiErrors;
 
 
 /**
  * Class InvalidInvoicePrefixException
- * @package zoparga\SzamlazzHu\Client\ApiErrors
+ * @package redmenta\SzamlazzHu\Client\ApiErrors
  */
 class InvalidInvoicePrefixException extends ClientException
 {

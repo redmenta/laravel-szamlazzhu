@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\ApiErrors;
+namespace redmenta\SzamlazzHu\Client\ApiErrors;
 
 
 /**
  * Class KeystoreOpeningException
- * @package zoparga\SzamlazzHu\Client\ApiErrors
+ * @package redmenta\SzamlazzHu\Client\ApiErrors
  *
  * Request could not open the keystore.
  */

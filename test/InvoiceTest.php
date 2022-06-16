@@ -1,11 +1,11 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests;
+namespace redmenta\SzamlazzHu\Tests;
 
 
-use zoparga\SzamlazzHu\Internal\Support\ItemHolder;
-use zoparga\SzamlazzHu\Invoice;
+use redmenta\SzamlazzHu\Internal\Support\ItemHolder;
+use redmenta\SzamlazzHu\Invoice;
 
 class InvoiceTest extends \Orchestra\Testbench\TestCase {
 

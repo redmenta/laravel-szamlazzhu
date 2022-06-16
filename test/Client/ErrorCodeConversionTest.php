@@ -1,25 +1,25 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Client;
+namespace redmenta\SzamlazzHu\Tests\Client;
 
 
 use GuzzleHttp\Psr7\Response;
-use zoparga\SzamlazzHu\Client\ApiErrors\AuthenticationException;
-use zoparga\SzamlazzHu\Client\ApiErrors\CannotCreateInvoiceException;
-use zoparga\SzamlazzHu\Client\ApiErrors\CommonResponseException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidGrossPriceValueException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidInvoicePrefixException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidNetPriceValueException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidVatRateValueException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvoiceNotificationSendingException;
-use zoparga\SzamlazzHu\Client\ApiErrors\KeystoreOpeningException;
-use zoparga\SzamlazzHu\Client\ApiErrors\NoXmlFileException;
-use zoparga\SzamlazzHu\Client\ApiErrors\RemoteMaintenanceException;
-use zoparga\SzamlazzHu\Client\ApiErrors\UnsuccessfulInvoiceSignatureException;
-use zoparga\SzamlazzHu\Client\ApiErrors\XmlReadingException;
-use zoparga\SzamlazzHu\Internal\Support\PaymentMethods;
-use zoparga\SzamlazzHu\Receipt;
+use redmenta\SzamlazzHu\Client\ApiErrors\AuthenticationException;
+use redmenta\SzamlazzHu\Client\ApiErrors\CannotCreateInvoiceException;
+use redmenta\SzamlazzHu\Client\ApiErrors\CommonResponseException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidGrossPriceValueException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidInvoicePrefixException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidNetPriceValueException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidVatRateValueException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvoiceNotificationSendingException;
+use redmenta\SzamlazzHu\Client\ApiErrors\KeystoreOpeningException;
+use redmenta\SzamlazzHu\Client\ApiErrors\NoXmlFileException;
+use redmenta\SzamlazzHu\Client\ApiErrors\RemoteMaintenanceException;
+use redmenta\SzamlazzHu\Client\ApiErrors\UnsuccessfulInvoiceSignatureException;
+use redmenta\SzamlazzHu\Client\ApiErrors\XmlReadingException;
+use redmenta\SzamlazzHu\Internal\Support\PaymentMethods;
+use redmenta\SzamlazzHu\Receipt;
 
 class ErrorCodeConversionTest extends TestCase {
 
@@ -27,7 +27,7 @@ class ErrorCodeConversionTest extends TestCase {
      * @param int $orderNumber
      * @param null $items
      * @param null $payments
-     * @return \zoparga\SzamlazzHu\Receipt
+     * @return \redmenta\SzamlazzHu\Receipt
      */
     protected function getReceipt($orderNumber = 1, $items = null, $payments = null)
     {
@@ -73,7 +73,7 @@ class ErrorCodeConversionTest extends TestCase {
 
     /**
      * @param $code
-     * @throws \zoparga\SzamlazzHu\Client\Errors\ModelValidationException
+     * @throws \redmenta\SzamlazzHu\Client\Errors\ModelValidationException
      */
     protected function invokeReceiptGetter($code)
     {

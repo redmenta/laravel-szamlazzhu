@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\ApiErrors;
+namespace redmenta\SzamlazzHu\Client\ApiErrors;
 
 
 /**
  * Class XmlReadingException
- * @package zoparga\SzamlazzHu\Client\ApiErrors
+ * @package redmenta\SzamlazzHu\Client\ApiErrors
  *
  * The request XML could be read. Maybe malformed or wrongly formatted
  */

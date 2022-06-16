@@ -1,7 +1,7 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Client\Fixtures\InvoiceCancellation;
+namespace redmenta\SzamlazzHu\Tests\Client\Fixtures\InvoiceCancellation;
 
 
 use GuzzleHttp\Psr7\Response;

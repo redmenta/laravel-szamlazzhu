@@ -5,22 +5,22 @@ This documentation represents the common invoice implementation only but you can
 
 Class | Namespace
 --- | ---
-Invoice | zoparga\SzamlazzHu\Invoice
-ProformaInvoice | zoparga\SzamlazzHu\ProformaInvoice
+Invoice | redmenta\SzamlazzHu\Invoice
+ProformaInvoice | redmenta\SzamlazzHu\ProformaInvoice
 
 ## Contract types
 
 Contract | Namespace
 --- | ---
-ArrayableMerchant | zoparga\SzamlazzHu\Contracts\ArrayableMerchant
-ArrayableCustomer | zoparga\SzamlazzHu\Contracts\ArrayableCustomer
-ArrayableItem | zoparga\SzamlazzHu\Contracts\ArrayableItem
-ArrayableItemCollection | zoparga\SzamlazzHu\Contracts\ArrayableItemCollection
+ArrayableMerchant | redmenta\SzamlazzHu\Contracts\ArrayableMerchant
+ArrayableCustomer | redmenta\SzamlazzHu\Contracts\ArrayableCustomer
+ArrayableItem | redmenta\SzamlazzHu\Contracts\ArrayableItem
+ArrayableItemCollection | redmenta\SzamlazzHu\Contracts\ArrayableItemCollection
 
 ## Initialize invoice
 ```php
-use zoparga\SzamlazzHu\Invoice;
-use zoparga\SzamlazzHu\Internal\Support\PaymentMethods;
+use redmenta\SzamlazzHu\Invoice;
+use redmenta\SzamlazzHu\Internal\Support\PaymentMethods;
 
 $invoice = new Invoice(); // Or: new ProformaInvoice();
 
@@ -80,7 +80,7 @@ $invoice->setCustomer([
 
 ### Add customer as ArrayableCustomer contract
 ```php
-use zoparga\SzamlazzHu\Contracts\ArrayableCustomer;
+use redmenta\SzamlazzHu\Contracts\ArrayableCustomer;
 
 class ThisIsMyCustomerClass implements ArrayableCustomer {
 
@@ -119,10 +119,10 @@ $invoice->setMerchant([
 ```
 
 ### Setup merchant as ArrayableMerchant contract
-There's a contract you can use on any class: _**zoparga\SzamlazzHu\Contracts\ArrayableMerchant**_
+There's a contract you can use on any class: _**redmenta\SzamlazzHu\Contracts\ArrayableMerchant**_
 
 ```php
-use zoparga\SzamlazzHu\Contracts\ArrayableMerchant;
+use redmenta\SzamlazzHu\Contracts\ArrayableMerchant;
 
 class ThisIsMyMerchantClass implements ArrayableMerchant {
 
@@ -168,7 +168,7 @@ $invoice->addItem([
 You may add items as classes that implements ArrayableItem contract
 
 ```php
-use zoparga\SzamlazzHu\Contracts\ArrayableItem;
+use redmenta\SzamlazzHu\Contracts\ArrayableItem;
 
 class ThisIsMyProductClass implements ArrayableItem {
 
@@ -192,7 +192,7 @@ $invoice->addItem($thisIsMyProduct);
 #### Add multiple items at once via ArrayableItemCollection
 Method needs to return with items wrapped in array or **_ArrayableItem_** contracts in an array.
 ```php
-use zoparga\SzamlazzHu\Contracts\ArrayableItemCollection;
+use redmenta\SzamlazzHu\Contracts\ArrayableItemCollection;
 
 class Cart implemenst ArrayableItemCollection {
 

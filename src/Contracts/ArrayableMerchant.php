@@ -1,7 +1,7 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Contracts;
+namespace redmenta\SzamlazzHu\Contracts;
 
 
 interface ArrayableMerchant

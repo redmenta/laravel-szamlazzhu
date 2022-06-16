@@ -1,7 +1,7 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Internal\Support;
+namespace redmenta\SzamlazzHu\Internal\Support;
 
 
 trait NormalizeParsedNumericArrays

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\ApiErrors;
+namespace redmenta\SzamlazzHu\Client\ApiErrors;
 
 
 use Psr\Http\Message\ResponseInterface;
@@ -9,7 +9,7 @@ use Throwable;
 
 /**
  * Class CommonException
- * @package zoparga\SzamlazzHu\Client\ApiErrors
+ * @package redmenta\SzamlazzHu\Client\ApiErrors
  *
  * Should be not dedicated error when remote error answer
  * does not contain error code or it does but unknown.

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\ApiErrors;
+namespace redmenta\SzamlazzHu\Client\ApiErrors;
 
 
 /**
  * Class AuthenticationException
- * @package zoparga\SzamlazzHu\Client\ApiErrors
+ * @package redmenta\SzamlazzHu\Client\ApiErrors
  *
  * The provided login credentials are invalid
  */

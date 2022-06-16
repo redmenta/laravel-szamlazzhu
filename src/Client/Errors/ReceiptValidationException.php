@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Errors;
+namespace redmenta\SzamlazzHu\Client\Errors;
 
 
 use Illuminate\Contracts\Validation\Validator;
-use zoparga\SzamlazzHu\Internal\AbstractModel;
-use zoparga\SzamlazzHu\Receipt;
+use redmenta\SzamlazzHu\Internal\AbstractModel;
+use redmenta\SzamlazzHu\Receipt;
 use Throwable;
 
 class ReceiptValidationException extends ModelValidationException

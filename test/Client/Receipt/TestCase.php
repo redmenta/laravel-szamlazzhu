@@ -1,14 +1,14 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Client\Receipt;
+namespace redmenta\SzamlazzHu\Tests\Client\Receipt;
 
 
-use zoparga\SzamlazzHu\Client\Client;
-use zoparga\SzamlazzHu\Internal\Support\PaymentMethods;
-use zoparga\SzamlazzHu\Receipt;
+use redmenta\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Internal\Support\PaymentMethods;
+use redmenta\SzamlazzHu\Receipt;
 
-class TestCase extends \zoparga\SzamlazzHu\Tests\Client\TestCase {
+class TestCase extends \redmenta\SzamlazzHu\Tests\Client\TestCase {
 
     /**
      * @param int $orderNumber

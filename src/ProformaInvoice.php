@@ -1,20 +1,20 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu;
+namespace redmenta\SzamlazzHu;
 
-use zoparga\SzamlazzHu\Client\ApiErrors\CommonResponseException;
-use zoparga\SzamlazzHu\Client\Errors\InvoiceValidationException;
-use zoparga\SzamlazzHu\Client\Errors\ModelValidationException;
-use zoparga\SzamlazzHu\Client\Errors\UnknownOrderIdException;
-use zoparga\SzamlazzHu\Client\Models\InvoiceCreationResponse;
-use zoparga\SzamlazzHu\Client\Models\ProformaInvoiceDeletionResponse;
-use zoparga\SzamlazzHu\Internal\AbstractInvoice;
-use zoparga\SzamlazzHu\Internal\Support\ClientAccessor;
+use redmenta\SzamlazzHu\Client\ApiErrors\CommonResponseException;
+use redmenta\SzamlazzHu\Client\Errors\InvoiceValidationException;
+use redmenta\SzamlazzHu\Client\Errors\ModelValidationException;
+use redmenta\SzamlazzHu\Client\Errors\UnknownOrderIdException;
+use redmenta\SzamlazzHu\Client\Models\InvoiceCreationResponse;
+use redmenta\SzamlazzHu\Client\Models\ProformaInvoiceDeletionResponse;
+use redmenta\SzamlazzHu\Internal\AbstractInvoice;
+use redmenta\SzamlazzHu\Internal\Support\ClientAccessor;
 
 /**
  * Class ProFormaInvoice
- * @package zoparga\SzamlazzHu
+ * @package redmenta\SzamlazzHu
  *
  * Pro-forma invoice is a kind of special invoice which is used to
  * send an `invoice` that is a prepayment request to the customer.

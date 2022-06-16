@@ -1,10 +1,10 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Fixtures;
+namespace redmenta\SzamlazzHu\Tests\Fixtures;
 
 
-use zoparga\SzamlazzHu\Contracts\ArrayableCustomer;
+use redmenta\SzamlazzHu\Contracts\ArrayableCustomer;
 
 class Customer implements ArrayableCustomer {
     protected $name;

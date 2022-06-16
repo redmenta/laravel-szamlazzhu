@@ -1,16 +1,16 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Internal\Support;
+namespace redmenta\SzamlazzHu\Internal\Support;
 
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
-use zoparga\SzamlazzHu\Contracts\ArrayableItem;
-use zoparga\SzamlazzHu\Contracts\ArrayableItemCollection;
+use redmenta\SzamlazzHu\Contracts\ArrayableItem;
+use redmenta\SzamlazzHu\Contracts\ArrayableItemCollection;
 
 /**
  * Trait SimplifiesItem
- * @package zoparga\SzamlazzHu\Support
+ * @package redmenta\SzamlazzHu\Support
  */
 trait ItemHolder {
 

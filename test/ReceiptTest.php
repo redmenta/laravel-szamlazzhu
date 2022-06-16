@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests;
+namespace redmenta\SzamlazzHu\Tests;
 
 
-use zoparga\SzamlazzHu\Internal\Support\ItemHolder;
-use zoparga\SzamlazzHu\Internal\Support\PaymentHolder;
-use zoparga\SzamlazzHu\Receipt;
+use redmenta\SzamlazzHu\Internal\Support\ItemHolder;
+use redmenta\SzamlazzHu\Internal\Support\PaymentHolder;
+use redmenta\SzamlazzHu\Receipt;
 
 class ReceiptTest extends \Orchestra\Testbench\TestCase {
 

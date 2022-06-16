@@ -1,7 +1,7 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client;
+namespace redmenta\SzamlazzHu\Client;
 
 
 use Carbon\Carbon;
@@ -15,44 +15,44 @@ use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use RuntimeException;
 use SebastianBergmann\CodeCoverage\ParserException;
-use zoparga\SzamlazzHu\Client\ApiErrors\AuthenticationException;
-use zoparga\SzamlazzHu\Client\ApiErrors\CannotCreateInvoiceException;
-use zoparga\SzamlazzHu\Client\ApiErrors\CommonResponseException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidGrossPriceValueException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidInvoicePrefixException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidNetPriceValueException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvalidVatRateValueException;
-use zoparga\SzamlazzHu\Client\ApiErrors\InvoiceNotificationSendingException;
-use zoparga\SzamlazzHu\Client\ApiErrors\KeystoreOpeningException;
-use zoparga\SzamlazzHu\Client\ApiErrors\NoXmlFileException;
-use zoparga\SzamlazzHu\Client\ApiErrors\ReceiptAlreadyExistsException;
-use zoparga\SzamlazzHu\Client\ApiErrors\ReceiptNotFoundException;
-use zoparga\SzamlazzHu\Client\ApiErrors\RemoteMaintenanceException;
-use zoparga\SzamlazzHu\Client\ApiErrors\UnsuccessfulInvoiceSignatureException;
-use zoparga\SzamlazzHu\Client\ApiErrors\XmlReadingException;
-use zoparga\SzamlazzHu\Client\Errors\InvalidClientConfigurationException;
-use zoparga\SzamlazzHu\Client\Errors\InvoiceNotFoundException;
-use zoparga\SzamlazzHu\Client\Errors\InvoiceValidationException;
-use zoparga\SzamlazzHu\Client\Errors\ModelValidationException;
-use zoparga\SzamlazzHu\Client\Errors\ReceiptValidationException;
-use zoparga\SzamlazzHu\Client\Models\InvoiceCancellationResponse;
-use zoparga\SzamlazzHu\Client\Models\InvoiceCreationResponse;
-use zoparga\SzamlazzHu\Client\Models\ProformaInvoiceDeletionResponse;
-use zoparga\SzamlazzHu\Client\Models\ReceiptCancellationResponse;
-use zoparga\SzamlazzHu\Client\Models\ReceiptCreationResponse;
-use zoparga\SzamlazzHu\Contracts\ArrayableMerchant;
-use zoparga\SzamlazzHu\Internal\AbstractInvoice;
-use zoparga\SzamlazzHu\Internal\AbstractModel;
-use zoparga\SzamlazzHu\Internal\Support\ClientAccessor;
-use zoparga\SzamlazzHu\Internal\Support\InvoiceValidationRules;
-use zoparga\SzamlazzHu\Internal\Support\MerchantHolder;
-use zoparga\SzamlazzHu\Internal\Support\NormalizeParsedNumericArrays;
-use zoparga\SzamlazzHu\Internal\Support\PaymentMethods;
-use zoparga\SzamlazzHu\Internal\Support\ReceiptValidationRules;
-use zoparga\SzamlazzHu\Invoice;
-use zoparga\SzamlazzHu\ProformaInvoice;
-use zoparga\SzamlazzHu\Receipt;
-use zoparga\SzamlazzHu\Util\XmlParser;
+use redmenta\SzamlazzHu\Client\ApiErrors\AuthenticationException;
+use redmenta\SzamlazzHu\Client\ApiErrors\CannotCreateInvoiceException;
+use redmenta\SzamlazzHu\Client\ApiErrors\CommonResponseException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidGrossPriceValueException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidInvoicePrefixException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidNetPriceValueException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvalidVatRateValueException;
+use redmenta\SzamlazzHu\Client\ApiErrors\InvoiceNotificationSendingException;
+use redmenta\SzamlazzHu\Client\ApiErrors\KeystoreOpeningException;
+use redmenta\SzamlazzHu\Client\ApiErrors\NoXmlFileException;
+use redmenta\SzamlazzHu\Client\ApiErrors\ReceiptAlreadyExistsException;
+use redmenta\SzamlazzHu\Client\ApiErrors\ReceiptNotFoundException;
+use redmenta\SzamlazzHu\Client\ApiErrors\RemoteMaintenanceException;
+use redmenta\SzamlazzHu\Client\ApiErrors\UnsuccessfulInvoiceSignatureException;
+use redmenta\SzamlazzHu\Client\ApiErrors\XmlReadingException;
+use redmenta\SzamlazzHu\Client\Errors\InvalidClientConfigurationException;
+use redmenta\SzamlazzHu\Client\Errors\InvoiceNotFoundException;
+use redmenta\SzamlazzHu\Client\Errors\InvoiceValidationException;
+use redmenta\SzamlazzHu\Client\Errors\ModelValidationException;
+use redmenta\SzamlazzHu\Client\Errors\ReceiptValidationException;
+use redmenta\SzamlazzHu\Client\Models\InvoiceCancellationResponse;
+use redmenta\SzamlazzHu\Client\Models\InvoiceCreationResponse;
+use redmenta\SzamlazzHu\Client\Models\ProformaInvoiceDeletionResponse;
+use redmenta\SzamlazzHu\Client\Models\ReceiptCancellationResponse;
+use redmenta\SzamlazzHu\Client\Models\ReceiptCreationResponse;
+use redmenta\SzamlazzHu\Contracts\ArrayableMerchant;
+use redmenta\SzamlazzHu\Internal\AbstractInvoice;
+use redmenta\SzamlazzHu\Internal\AbstractModel;
+use redmenta\SzamlazzHu\Internal\Support\ClientAccessor;
+use redmenta\SzamlazzHu\Internal\Support\InvoiceValidationRules;
+use redmenta\SzamlazzHu\Internal\Support\MerchantHolder;
+use redmenta\SzamlazzHu\Internal\Support\NormalizeParsedNumericArrays;
+use redmenta\SzamlazzHu\Internal\Support\PaymentMethods;
+use redmenta\SzamlazzHu\Internal\Support\ReceiptValidationRules;
+use redmenta\SzamlazzHu\Invoice;
+use redmenta\SzamlazzHu\ProformaInvoice;
+use redmenta\SzamlazzHu\Receipt;
+use redmenta\SzamlazzHu\Util\XmlParser;
 use XMLWriter;
 
 class Client
@@ -671,7 +671,7 @@ class Client
      * @param null    $emailMessage
      *
      * @return InvoiceCreationResponse
-     * @throws \zoparga\SzamlazzHu\Client\Errors\ModelValidationException
+     * @throws \redmenta\SzamlazzHu\Client\Errors\ModelValidationException
      */
     public function uploadInvoice(Invoice $invoice, $withoutPdf = false, $emailSubject = null, $emailMessage = null)
     {

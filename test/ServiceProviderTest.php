@@ -1,9 +1,9 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests;
+namespace redmenta\SzamlazzHu\Tests;
 
-use zoparga\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Client\Client;
 
 class ServiceProviderTest extends TestCase
 {

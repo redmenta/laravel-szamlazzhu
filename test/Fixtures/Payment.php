@@ -1,10 +1,10 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Fixtures;
+namespace redmenta\SzamlazzHu\Tests\Fixtures;
 
 
-use zoparga\SzamlazzHu\Contracts\ArrayablePayment;
+use redmenta\SzamlazzHu\Contracts\ArrayablePayment;
 
 class Payment implements ArrayablePayment {
     protected $paymentMethod;
@@ -31,7 +31,7 @@ class Payment implements ArrayablePayment {
 
     /**
      * [
-     *  'paymentMethod' => '', // @see \zoparga\SzamlazzHu\Internal\Support\PaymentMethods::$paymentMethods
+     *  'paymentMethod' => '', // @see \redmenta\SzamlazzHu\Internal\Support\PaymentMethods::$paymentMethods
      *  'amount' => '', // The amount was paid
      *  'comment' => '', // A single note on payment
      * ]
@@ -41,7 +41,7 @@ class Payment implements ArrayablePayment {
     function toPaymentArray()
     {
         return [
-            'paymentMethod' => $this->paymentMethod, // @see \zoparga\SzamlazzHu\Internal\Support\PaymentMethods::$paymentMethods
+            'paymentMethod' => $this->paymentMethod, // @see \redmenta\SzamlazzHu\Internal\Support\PaymentMethods::$paymentMethods
             'amount' => $this->amount, // The amount was paid
             'comment' => $this->comment, // A single note on payment
         ];

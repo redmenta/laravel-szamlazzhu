@@ -1,13 +1,13 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Errors;
+namespace redmenta\SzamlazzHu\Client\Errors;
 
 
 use Illuminate\Contracts\Validation\Validator;
-use zoparga\SzamlazzHu\Internal\AbstractInvoice;
-use zoparga\SzamlazzHu\Internal\AbstractModel;
-use zoparga\SzamlazzHu\Invoice;
+use redmenta\SzamlazzHu\Internal\AbstractInvoice;
+use redmenta\SzamlazzHu\Internal\AbstractModel;
+use redmenta\SzamlazzHu\Invoice;
 use Throwable;
 
 class InvoiceValidationException extends ModelValidationException

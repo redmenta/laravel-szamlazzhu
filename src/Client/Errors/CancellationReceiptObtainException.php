@@ -1,7 +1,7 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Errors;
+namespace redmenta\SzamlazzHu\Client\Errors;
 
 
 use Exception;

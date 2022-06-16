@@ -1,11 +1,11 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Contracts;
+namespace redmenta\SzamlazzHu\Contracts;
 
 /**
  * Interface ArrayableInvoiceItemCollection
- * @package zoparga\SzamlazzHu\Contracts
+ * @package redmenta\SzamlazzHu\Contracts
  */
 interface ArrayableItemCollection
 {

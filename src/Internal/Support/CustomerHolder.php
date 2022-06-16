@@ -1,15 +1,15 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Internal\Support;
+namespace redmenta\SzamlazzHu\Internal\Support;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use zoparga\SzamlazzHu\Contracts\ArrayableCustomer;
+use redmenta\SzamlazzHu\Contracts\ArrayableCustomer;
 
 /**
  * Trait SimplifiesCustomer
- * @package zoparga\SzamlazzHu\Support
+ * @package redmenta\SzamlazzHu\Support
  *
  * [Attributes]
  * @property-read string $customerEmail

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests;
+namespace redmenta\SzamlazzHu\Tests;
 
 
-use zoparga\SzamlazzHu\Providers\SzamlazzHuServiceProvider;
+use redmenta\SzamlazzHu\Providers\SzamlazzHuServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Fixtures;
+namespace redmenta\SzamlazzHu\Tests\Fixtures;
 
 
-use zoparga\SzamlazzHu\Contracts\ArrayableItem;
-use zoparga\SzamlazzHu\Contracts\ArrayableItemCollection;
+use redmenta\SzamlazzHu\Contracts\ArrayableItem;
+use redmenta\SzamlazzHu\Contracts\ArrayableItemCollection;
 
 class ItemCollection implements ArrayableItemCollection {
 

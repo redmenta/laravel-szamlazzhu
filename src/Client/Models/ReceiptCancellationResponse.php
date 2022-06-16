@@ -1,14 +1,14 @@
 <?php
 
-namespace zoparga\SzamlazzHu\Client\Models;
+namespace redmenta\SzamlazzHu\Client\Models;
 use Psr\Http\Message\ResponseInterface;
-use zoparga\SzamlazzHu\Client\Client;
-use zoparga\SzamlazzHu\Receipt;
+use redmenta\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Receipt;
 
 
 /**
  * Class ReceiptCancellationResponse
- * @package zoparga\SzamlazzHu\Client\Models
+ * @package redmenta\SzamlazzHu\Client\Models
  *
  * @property-read int $id
  * @property-read string $newReceiptNumber

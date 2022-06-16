@@ -1,16 +1,16 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Internal;
+namespace redmenta\SzamlazzHu\Internal;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use zoparga\SzamlazzHu\Internal\Support\PaymentMethods;
+use redmenta\SzamlazzHu\Internal\Support\PaymentMethods;
 
 
 /**
  * Class AbstractModel
- * @package zoparga\SzamlazzHu\Internal
+ * @package redmenta\SzamlazzHu\Internal
  *
  * [Ancestor attributes]
  * @property string $paymentMethod (transfer, cash, bank_card, check, etc..)

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Errors;
+namespace redmenta\SzamlazzHu\Client\Errors;
 
 
 use Exception;
 use Illuminate\Contracts\Validation\Validator;
-use zoparga\SzamlazzHu\Internal\AbstractModel;
+use redmenta\SzamlazzHu\Internal\AbstractModel;
 use Throwable;
 
 abstract class ModelValidationException extends Exception

@@ -1,13 +1,13 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Fixtures;
+namespace redmenta\SzamlazzHu\Tests\Fixtures;
 
 
 use Illuminate\Support\Collection;
 
 class ItemHolder {
-    use \zoparga\SzamlazzHu\Internal\Support\ItemHolder;
+    use \redmenta\SzamlazzHu\Internal\Support\ItemHolder;
 
     public function __construct()
     {

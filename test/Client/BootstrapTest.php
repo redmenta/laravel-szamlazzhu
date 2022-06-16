@@ -1,10 +1,10 @@
 <?php
 
-namespace zoparga\SzamlazzHu\Tests\Client;
+namespace redmenta\SzamlazzHu\Tests\Client;
 
 
-use zoparga\SzamlazzHu\Client\Client;
-use zoparga\SzamlazzHu\Client\Errors\InvalidClientConfigurationException;
+use redmenta\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Client\Errors\InvalidClientConfigurationException;
 
 class BootstrapTest extends TestCase
 {

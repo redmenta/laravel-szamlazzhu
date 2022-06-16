@@ -1,14 +1,14 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Models;
+namespace redmenta\SzamlazzHu\Client\Models;
 
-use zoparga\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Client\Client;
 
 
 /**
  * Class Invoice
- * @package zoparga\SzamlazzHu\Client\Models
+ * @package redmenta\SzamlazzHu\Client\Models
  *
  * [Attributes]
  * @property-read string $invoiceNumber

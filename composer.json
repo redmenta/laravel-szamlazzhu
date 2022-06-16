@@ -1,5 +1,5 @@
 {
-  "name": "zoparga/laravel-szamlazzhu",
+  "name": "redmenta/laravel-szamlazzhu",
   "license": "MIT",
   "description": "Szamlazz.hu integration for Laravel",
   "keywords": [
@@ -12,8 +12,8 @@
   ],
   "authors": [
     {
-      "name": "Forgács Bence",
-      "email": "sykorax93@gmail.com"
+      "name": "Balint Mero",
+      "email": "balint.mero@redmenta.com"
     }
   ],
   "require": {
@@ -32,12 +32,12 @@
     "files": [
     ],
     "psr-4": {
-      "zoparga\\SzamlazzHu\\": "src/"
+      "redmenta\\SzamlazzHu\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "zoparga\\SzamlazzHu\\Tests\\": "test/"
+      "redmenta\\SzamlazzHu\\Tests\\": "test/"
     }
   },
   "suggest": {
@@ -51,7 +51,7 @@
       "aliases": {
       },
       "providers": [
-        "zoparga\\SzamlazzHu\\Providers\\SzamlazzHuServiceProvider"
+        "redmenta\\SzamlazzHu\\Providers\\SzamlazzHuServiceProvider"
       ]
     }
   },

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Models;
+namespace redmenta\SzamlazzHu\Client\Models;
 
 use Illuminate\Support\Str;
 use Psr\Http\Message\ResponseInterface;
-use zoparga\SzamlazzHu\Client\Client;
-use zoparga\SzamlazzHu\Invoice;
+use redmenta\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Invoice;
 
 
 /**
@@ -15,7 +15,7 @@ use zoparga\SzamlazzHu\Invoice;
  * [Attributes]
  * @property-read string $cancellationInvoiceNumber
  *
- * @package zoparga\SzamlazzHu\Client\Models
+ * @package redmenta\SzamlazzHu\Client\Models
  */
 class InvoiceCancellationResponse extends CommonResponseModel {
 
@@ -53,7 +53,7 @@ class InvoiceCancellationResponse extends CommonResponseModel {
 
     /**
      * @return Invoice|null
-     * @throws \zoparga\SzamlazzHu\Client\ApiErrors\CommonResponseException
+     * @throws \redmenta\SzamlazzHu\Client\ApiErrors\CommonResponseException
      */
     public function cancellationInvoice()
     {

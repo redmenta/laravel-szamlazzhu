@@ -1,11 +1,11 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Fixtures;
+namespace redmenta\SzamlazzHu\Tests\Fixtures;
 
 
 class MerchantHolder {
 
-    use \zoparga\SzamlazzHu\Internal\Support\MerchantHolder;
+    use \redmenta\SzamlazzHu\Internal\Support\MerchantHolder;
 
 }

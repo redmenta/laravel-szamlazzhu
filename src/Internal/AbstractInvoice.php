@@ -1,24 +1,24 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Internal;
+namespace redmenta\SzamlazzHu\Internal;
 
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use zoparga\SzamlazzHu\Contracts\ArrayableCustomer;
-use zoparga\SzamlazzHu\Contracts\ArrayableItem;
-use zoparga\SzamlazzHu\Contracts\ArrayableItemCollection;
-use zoparga\SzamlazzHu\Contracts\ArrayableMerchant;
-use zoparga\SzamlazzHu\Internal\Support\CustomerHolder;
-use zoparga\SzamlazzHu\Internal\Support\ItemHolder;
-use zoparga\SzamlazzHu\Internal\Support\MerchantHolder;
+use redmenta\SzamlazzHu\Contracts\ArrayableCustomer;
+use redmenta\SzamlazzHu\Contracts\ArrayableItem;
+use redmenta\SzamlazzHu\Contracts\ArrayableItemCollection;
+use redmenta\SzamlazzHu\Contracts\ArrayableMerchant;
+use redmenta\SzamlazzHu\Internal\Support\CustomerHolder;
+use redmenta\SzamlazzHu\Internal\Support\ItemHolder;
+use redmenta\SzamlazzHu\Internal\Support\MerchantHolder;
 
 /**
  * Class AbstractInvoice
- * @package zoparga\SzamlazzHu\Internal
+ * @package redmenta\SzamlazzHu\Internal
  *
  * [Self attributes]
  * @property boolean $isElectronic

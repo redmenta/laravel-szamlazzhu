@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Models;
+namespace redmenta\SzamlazzHu\Client\Models;
 
 
 use Psr\Http\Message\ResponseInterface;
-use zoparga\SzamlazzHu\Client\Client;
-use zoparga\SzamlazzHu\ProformaInvoice;
+use redmenta\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\ProformaInvoice;
 
 class ProformaInvoiceDeletionResponse extends CommonResponseModel
 {

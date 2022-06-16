@@ -1,13 +1,13 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Tests\Client\Invoice;
+namespace redmenta\SzamlazzHu\Tests\Client\Invoice;
 
 
-use zoparga\SzamlazzHu\Client\Client;
-use zoparga\SzamlazzHu\Invoice;
+use redmenta\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Invoice;
 
-class TestCase extends \zoparga\SzamlazzHu\Tests\Client\TestCase {
+class TestCase extends \redmenta\SzamlazzHu\Tests\Client\TestCase {
 
     /**
      * @param null $number

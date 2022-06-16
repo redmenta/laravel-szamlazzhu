@@ -1,11 +1,11 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Providers;
+namespace redmenta\SzamlazzHu\Providers;
 
 
 use Illuminate\Support\ServiceProvider;
-use zoparga\SzamlazzHu\Client\Client;
+use redmenta\SzamlazzHu\Client\Client;
 
 class SzamlazzHuServiceProvider extends ServiceProvider
 {

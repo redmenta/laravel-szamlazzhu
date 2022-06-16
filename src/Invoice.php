@@ -1,18 +1,18 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu;
+namespace redmenta\SzamlazzHu;
 
-use zoparga\SzamlazzHu\Client\Errors\InvoiceValidationException;
-use zoparga\SzamlazzHu\Client\Errors\ModelValidationException;
-use zoparga\SzamlazzHu\Client\Models\InvoiceCancellationResponse;
-use zoparga\SzamlazzHu\Client\Models\InvoiceCreationResponse;
-use zoparga\SzamlazzHu\Internal\AbstractInvoice;
-use zoparga\SzamlazzHu\Internal\Support\ClientAccessor;
+use redmenta\SzamlazzHu\Client\Errors\InvoiceValidationException;
+use redmenta\SzamlazzHu\Client\Errors\ModelValidationException;
+use redmenta\SzamlazzHu\Client\Models\InvoiceCancellationResponse;
+use redmenta\SzamlazzHu\Client\Models\InvoiceCreationResponse;
+use redmenta\SzamlazzHu\Internal\AbstractInvoice;
+use redmenta\SzamlazzHu\Internal\Support\ClientAccessor;
 
 /**
  * Class Invoice
- * @package zoparga\SzamlazzHu
+ * @package redmenta\SzamlazzHu
  */
 class Invoice extends AbstractInvoice {
 

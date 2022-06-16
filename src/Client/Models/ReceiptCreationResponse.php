@@ -1,12 +1,12 @@
 <?php
 
 
-namespace zoparga\SzamlazzHu\Client\Models;
+namespace redmenta\SzamlazzHu\Client\Models;
 use Carbon\Carbon;
 
 /**
  * Class ReceiptCreationResponse
- * @package zoparga\SzamlazzHu\Client\Models
+ * @package redmenta\SzamlazzHu\Client\Models
  *
  * [Attributes]
  * @property-read int $id

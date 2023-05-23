@@ -25,7 +25,7 @@ This package supports the following methods:
 - Receipt cancellation (reversing)
 
 ## Requirements
-Supports Laravel: **5.5** / **6.*** / **7.*** / **8.*** / **9.***
+Supports Laravel: **5.5** / **6.*** / **7.*** / **8.*** / **9.*** / **10.***
 
 ## Documentations
 For usage please refer to the [technical documentation](doc/technical/documentation.md).
